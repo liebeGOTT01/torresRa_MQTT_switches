@@ -1,0 +1,56 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TorresRa-MQTT</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="torres-mqtt-switch-neopixel.css">
+</head>
+
+<body>
+    <div class="container">
+        <img class="task-img" src="https://lh3.googleusercontent.com/zB8y3PHmUos4fbghwXAlPks8UJH7nBmH9yQcXKbCJdscwVujXVduSovxYvoSg2ovutTKUryJd4ADpn15P1vA7hrkcZUXr1yI4n3t4PxOMlw5qPg8iHyjCY3tO4C-89ryxbFkxLxGeA=w1920-h1080" alt=" ">
+
+        <p class="fancy-text ">
+            Play with..
+        </p>
+        <hr>
+        <div class="container justify-content-center w-100 title ">
+            <h1>MQTT Switch</h1>
+            <h4 id='status-header'>Connecting to broker...</h4>
+        </div>
+    </div>
+    <hr>
+
+    <div class="container card border-light justify-content-center w-100 in-container">
+        <div class="text-center mt-5 p-5">
+            <h4>Switch for NeoPixel at Index 0</h4>
+            <label class="switch align-items-center">
+                <input type="checkbox" id="pub-switch-0">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div class="text-center mt-5 p-5">
+            <h4>Switch for NeoPixel at Index 1</h4>
+            <label class="switch align-items-center">
+                <input type="checkbox" id="pub-switch-1">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div class="text-center mt-5 p-5">
+            <h4>Switch for NeoPixel at Index 2</h4>
+            <label class="switch align-items-center">
+                <input type="checkbox" id="pub-switch-2">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </div>
+
+</body>
+<script src="./browserMqtt.js"></script>
+<script src="./torres-mqtt-switch-neopixel.js"></script>
+
+</html>
